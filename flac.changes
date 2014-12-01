@@ -1,4 +1,4 @@
-* Sun Nov 30 2014 Pasi Sjöholm <pasi.sjoholm@jollamobile.com> 1.2.1-5
+* Sun Nov 30 2014 Pasi Sjöholm <pasi.sjoholm@jollamobile.com> - 1.2.1-5
 - Fix CVE-2014-8962 (Fix a buffer read overflow), CVE-2014-9028
   (Avoid a heap overflow), "CVE-2014-9028-2" (Avoid a heap 
   overflow. Closely related to the former fix, but strictly 
