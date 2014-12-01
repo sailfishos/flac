@@ -1,7 +1,7 @@
 Summary: An encoder/decoder for the Free Lossless Audio Codec
 Name: flac
 Version: 1.2.1
-Release: 4
+Release: 5
 License: BSD and GPLv2+
 Group: Applications/Multimedia
 Source: http://prdownloads.sourceforge.net/flac/flac-%{version}.tar.gz
@@ -11,6 +11,10 @@ Patch3: flac-1.2.1-hidesyms.patch
 Patch4: flac-1.2.1-tests.patch
 Patch5: flac-1.2.1-cflags.patch
 Patch6: flac-1.2.1-bitreader.patch
+Patch7: CVE-2014-8962.patch
+Patch8: CVE-2014-9028.patch
+Patch9: CVE-2014-9028-2.patch
+
 URL: http://flac.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: libogg-devel
@@ -47,6 +51,9 @@ will use the Free Lossless Audio Codec.
 %patch4 -p1 -b .tests
 %patch5 -p1 -b .cflags
 %patch6 -p0 -b .bitreader
+%patch7 -p1 -b .CVE-2014-8962
+%patch8 -p1 -b .CVE-2014-9028
+%patch9 -p1 -b .CVE-2014-9028-2
 
 %build
 ./autogen.sh -V
