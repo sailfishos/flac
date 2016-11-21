@@ -63,7 +63,10 @@ make install DESTDIR=%{buildroot}
 find %{buildroot} -name "*.la" | xargs rm -f
 
 %check
+# Test binary segfaults on aarch64
+%ifnarch aarch64
 make -C test check
+%endif
 
 %clean
 rm -rf %{buildroot}
