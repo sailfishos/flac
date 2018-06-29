@@ -1,6 +1,6 @@
 Summary:       An encoder/decoder for the Free Lossless Audio Codec
 Name:          flac
-Version:       1.3.1
+Version:       1.3.2
 Release:       0
 License:       BSD and GPLv2+
 Group:         Applications/Multimedia
