@@ -1,6 +1,6 @@
 Name:          flac
 Summary:       An encoder/decoder for the Free Lossless Audio Codec
-Version:       1.3.4
+Version:       1.4.3
 Release:       0
 License:       BSD and GPLv2+ and GFDL
 URL:           https://xiph.org/flac/
@@ -76,7 +76,7 @@ make check
 
 %files devel
 %defattr(-, root, root)
-%doc AUTHORS README
+%doc AUTHORS README.md
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
